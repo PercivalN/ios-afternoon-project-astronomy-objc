@@ -30,6 +30,8 @@
 		DD5A7BE323E1984400EBD8F6 /* PNCMarsRoverClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BE223E1984400EBD8F6 /* PNCMarsRoverClient.m */; };
 		DD5A7BE423E1984400EBD8F6 /* PNCMarsRoverClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BE223E1984400EBD8F6 /* PNCMarsRoverClient.m */; };
 		DD5A7BEB23E1A8BC00EBD8F6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5A7BEA23E1A8BC00EBD8F6 /* Default-568h@2x.png */; };
+		DD5A7BEE23E1AC0700EBD8F6 /* PNCCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BED23E1AC0700EBD8F6 /* PNCCache.m */; };
+		DD5A7BEF23E1AC0700EBD8F6 /* PNCCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BED23E1AC0700EBD8F6 /* PNCCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		DD5A7BE223E1984400EBD8F6 /* PNCMarsRoverClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNCMarsRoverClient.m; sourceTree = "<group>"; };
 		DD5A7BE623E199BB00EBD8F6 /* Astronomy-Hybrid-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Astronomy-Hybrid-Bridging-Header.h"; sourceTree = "<group>"; };
 		DD5A7BEA23E1A8BC00EBD8F6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DD5A7BEC23E1AC0700EBD8F6 /* PNCCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNCCache.h; sourceTree = "<group>"; };
+		DD5A7BED23E1AC0700EBD8F6 /* PNCCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNCCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 		DD5A7BDC23E1945500EBD8F6 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				DD5A7BEC23E1AC0700EBD8F6 /* PNCCache.h */,
+				DD5A7BED23E1AC0700EBD8F6 /* PNCCache.m */,
 				DD5A7BE123E1984400EBD8F6 /* PNCMarsRoverClient.h */,
 				DD5A7BE223E1984400EBD8F6 /* PNCMarsRoverClient.m */,
 			);
@@ -302,6 +308,7 @@
 				DD5A7BD623E1940F00EBD8F6 /* Camera.swift in Sources */,
 				DD5A7BA123DF664800EBD8F6 /* main.m in Sources */,
 				DD5A7B9323DF664300EBD8F6 /* SceneDelegate.m in Sources */,
+				DD5A7BEE23E1AC0700EBD8F6 /* PNCCache.m in Sources */,
 				DD5A7BD323E193EB00EBD8F6 /* PNCSolDescription.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD5A7BE423E1984400EBD8F6 /* PNCMarsRoverClient.m in Sources */,
+				DD5A7BEF23E1AC0700EBD8F6 /* PNCCache.m in Sources */,
 				DD5A7BAB23DF664900EBD8F6 /* Astronomy_HybridTests.m in Sources */,
 				DD5A7BD023E193C500EBD8F6 /* PNCMarsRover.m in Sources */,
 				DD5A7BC723E1933900EBD8F6 /* MainCollectionViewController.swift in Sources */,

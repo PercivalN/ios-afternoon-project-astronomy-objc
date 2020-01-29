@@ -9,8 +9,18 @@
 #import <Foundation/Foundation.h>
 
 
+@class PNCMarsRover;
+@class PNCMarsPhotoReference;
+
+typedef void (^PNCRoverCompletionBlock)(PNCMarsRover *, NSError *);
+typedef void (^PNCPhotoReferenceCompletionBlock)(NSArray<PNCMarsPhotoReference *> *, NSError *);
+typedef void (^PNCImageCompletionBlock)(NSData *, NSError *);
 
 @interface PNCMarsRoverClient : NSObject
+
+- (void)fetchMarsRoverWithName:(NSString *)name completionBlock:(PNCRoverCompletionBlock)completionBlock;
+- (void)fetchPhotosFromRover:(PNCMarsRover *)rover onSol:(NSNumber *)sol completionBlock:(PNCPhotoReferenceCompletionBlock)completionBlock;
+- (void)fetchImageFromPhotoReference:(NSArray<PNCMarsPhotoReference *> *)photoReference completionBlock:(PNCImageCompletionBlock)completionBlock;
 
 @end
 
