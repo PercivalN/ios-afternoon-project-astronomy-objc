@@ -38,8 +38,8 @@
 
 	 */
 
-	NSURL *url = [NSURL
-				  URLWithString:@"https://api.nasa.gov/mars-photos/api/v1/manifests/curiosity?api_key=DEMO_KEY"];
+	//NSURL *url = [NSURL
+//				  URLWithString:@"https://api.nasa.gov/mars-photos/api/v1/manifests/curiosity?api_key=DEMO_KEY"];
 }
 
 

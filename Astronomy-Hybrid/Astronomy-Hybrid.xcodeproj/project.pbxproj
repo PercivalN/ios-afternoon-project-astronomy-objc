@@ -15,6 +15,21 @@
 		DD5A7B9E23DF664800EBD8F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5A7B9C23DF664800EBD8F6 /* LaunchScreen.storyboard */; };
 		DD5A7BA123DF664800EBD8F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BA023DF664800EBD8F6 /* main.m */; };
 		DD5A7BAB23DF664900EBD8F6 /* Astronomy_HybridTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BAA23DF664900EBD8F6 /* Astronomy_HybridTests.m */; };
+		DD5A7BC323E1930600EBD8F6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BC223E1930600EBD8F6 /* DetailViewController.swift */; };
+		DD5A7BC423E1930600EBD8F6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BC223E1930600EBD8F6 /* DetailViewController.swift */; };
+		DD5A7BC623E1933900EBD8F6 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BC523E1933900EBD8F6 /* MainCollectionViewController.swift */; };
+		DD5A7BC723E1933900EBD8F6 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BC523E1933900EBD8F6 /* MainCollectionViewController.swift */; };
+		DD5A7BCA23E1937E00EBD8F6 /* PNCMarsPhotoReference.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BC923E1937E00EBD8F6 /* PNCMarsPhotoReference.m */; };
+		DD5A7BCB23E1937E00EBD8F6 /* PNCMarsPhotoReference.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BC923E1937E00EBD8F6 /* PNCMarsPhotoReference.m */; };
+		DD5A7BCF23E193C500EBD8F6 /* PNCMarsRover.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BCE23E193C500EBD8F6 /* PNCMarsRover.m */; };
+		DD5A7BD023E193C500EBD8F6 /* PNCMarsRover.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BCE23E193C500EBD8F6 /* PNCMarsRover.m */; };
+		DD5A7BD323E193EB00EBD8F6 /* PNCSolDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BD223E193EB00EBD8F6 /* PNCSolDescription.m */; };
+		DD5A7BD423E193EB00EBD8F6 /* PNCSolDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BD223E193EB00EBD8F6 /* PNCSolDescription.m */; };
+		DD5A7BD623E1940F00EBD8F6 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BD523E1940F00EBD8F6 /* Camera.swift */; };
+		DD5A7BD723E1940F00EBD8F6 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BD523E1940F00EBD8F6 /* Camera.swift */; };
+		DD5A7BE323E1984400EBD8F6 /* PNCMarsRoverClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BE223E1984400EBD8F6 /* PNCMarsRoverClient.m */; };
+		DD5A7BE423E1984400EBD8F6 /* PNCMarsRoverClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A7BE223E1984400EBD8F6 /* PNCMarsRoverClient.m */; };
+		DD5A7BEB23E1A8BC00EBD8F6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5A7BEA23E1A8BC00EBD8F6 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +58,19 @@
 		DD5A7BA623DF664900EBD8F6 /* Astronomy-HybridTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Astronomy-HybridTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5A7BAA23DF664900EBD8F6 /* Astronomy_HybridTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Astronomy_HybridTests.m; sourceTree = "<group>"; };
 		DD5A7BAC23DF664900EBD8F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD5A7BC223E1930600EBD8F6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DD5A7BC523E1933900EBD8F6 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		DD5A7BC823E1937E00EBD8F6 /* PNCMarsPhotoReference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNCMarsPhotoReference.h; sourceTree = "<group>"; };
+		DD5A7BC923E1937E00EBD8F6 /* PNCMarsPhotoReference.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNCMarsPhotoReference.m; sourceTree = "<group>"; };
+		DD5A7BCD23E193C500EBD8F6 /* PNCMarsRover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNCMarsRover.h; sourceTree = "<group>"; };
+		DD5A7BCE23E193C500EBD8F6 /* PNCMarsRover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNCMarsRover.m; sourceTree = "<group>"; };
+		DD5A7BD123E193EB00EBD8F6 /* PNCSolDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNCSolDescription.h; sourceTree = "<group>"; };
+		DD5A7BD223E193EB00EBD8F6 /* PNCSolDescription.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNCSolDescription.m; sourceTree = "<group>"; };
+		DD5A7BD523E1940F00EBD8F6 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		DD5A7BE123E1984400EBD8F6 /* PNCMarsRoverClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNCMarsRoverClient.h; sourceTree = "<group>"; };
+		DD5A7BE223E1984400EBD8F6 /* PNCMarsRoverClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNCMarsRoverClient.m; sourceTree = "<group>"; };
+		DD5A7BE623E199BB00EBD8F6 /* Astronomy-Hybrid-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Astronomy-Hybrid-Bridging-Header.h"; sourceTree = "<group>"; };
+		DD5A7BEA23E1A8BC00EBD8F6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +94,7 @@
 		DD5A7B8223DF664300EBD8F6 = {
 			isa = PBXGroup;
 			children = (
+				DD5A7BEA23E1A8BC00EBD8F6 /* Default-568h@2x.png */,
 				DD5A7B8D23DF664300EBD8F6 /* Astronomy-Hybrid */,
 				DD5A7BA923DF664900EBD8F6 /* Astronomy-HybridTests */,
 				DD5A7B8C23DF664300EBD8F6 /* Products */,
@@ -84,17 +113,13 @@
 		DD5A7B8D23DF664300EBD8F6 /* Astronomy-Hybrid */ = {
 			isa = PBXGroup;
 			children = (
-				DD5A7B8E23DF664300EBD8F6 /* AppDelegate.h */,
-				DD5A7B8F23DF664300EBD8F6 /* AppDelegate.m */,
-				DD5A7B9123DF664300EBD8F6 /* SceneDelegate.h */,
-				DD5A7B9223DF664300EBD8F6 /* SceneDelegate.m */,
-				DD5A7B9423DF664300EBD8F6 /* ViewController.h */,
-				DD5A7B9523DF664300EBD8F6 /* ViewController.m */,
-				DD5A7B9723DF664300EBD8F6 /* Main.storyboard */,
-				DD5A7B9A23DF664800EBD8F6 /* Assets.xcassets */,
-				DD5A7B9C23DF664800EBD8F6 /* LaunchScreen.storyboard */,
-				DD5A7B9F23DF664800EBD8F6 /* Info.plist */,
+				DD5A7BE723E19B7B00EBD8F6 /* Resources */,
+				DD5A7BE823E19B9100EBD8F6 /* View Controllers */,
+				DD5A7BCC23E1939F00EBD8F6 /* Models */,
+				DD5A7BDC23E1945500EBD8F6 /* Networking */,
+				DD5A7BE923E19B9F00EBD8F6 /* Storyboards */,
 				DD5A7BA023DF664800EBD8F6 /* main.m */,
+				DD5A7BE623E199BB00EBD8F6 /* Astronomy-Hybrid-Bridging-Header.h */,
 			);
 			path = "Astronomy-Hybrid";
 			sourceTree = "<group>";
@@ -106,6 +131,62 @@
 				DD5A7BAC23DF664900EBD8F6 /* Info.plist */,
 			);
 			path = "Astronomy-HybridTests";
+			sourceTree = "<group>";
+		};
+		DD5A7BCC23E1939F00EBD8F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A7BC823E1937E00EBD8F6 /* PNCMarsPhotoReference.h */,
+				DD5A7BC923E1937E00EBD8F6 /* PNCMarsPhotoReference.m */,
+				DD5A7BCD23E193C500EBD8F6 /* PNCMarsRover.h */,
+				DD5A7BCE23E193C500EBD8F6 /* PNCMarsRover.m */,
+				DD5A7BD123E193EB00EBD8F6 /* PNCSolDescription.h */,
+				DD5A7BD223E193EB00EBD8F6 /* PNCSolDescription.m */,
+				DD5A7BD523E1940F00EBD8F6 /* Camera.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD5A7BDC23E1945500EBD8F6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A7BE123E1984400EBD8F6 /* PNCMarsRoverClient.h */,
+				DD5A7BE223E1984400EBD8F6 /* PNCMarsRoverClient.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DD5A7BE723E19B7B00EBD8F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A7B8E23DF664300EBD8F6 /* AppDelegate.h */,
+				DD5A7B8F23DF664300EBD8F6 /* AppDelegate.m */,
+				DD5A7B9123DF664300EBD8F6 /* SceneDelegate.h */,
+				DD5A7B9223DF664300EBD8F6 /* SceneDelegate.m */,
+				DD5A7B9A23DF664800EBD8F6 /* Assets.xcassets */,
+				DD5A7B9F23DF664800EBD8F6 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DD5A7BE823E19B9100EBD8F6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A7B9423DF664300EBD8F6 /* ViewController.h */,
+				DD5A7B9523DF664300EBD8F6 /* ViewController.m */,
+				DD5A7BC223E1930600EBD8F6 /* DetailViewController.swift */,
+				DD5A7BC523E1933900EBD8F6 /* MainCollectionViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DD5A7BE923E19B9F00EBD8F6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A7B9723DF664300EBD8F6 /* Main.storyboard */,
+				DD5A7B9C23DF664800EBD8F6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,9 +238,11 @@
 				TargetAttributes = {
 					DD5A7B8A23DF664300EBD8F6 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					DD5A7BA523DF664900EBD8F6 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = DD5A7B8A23DF664300EBD8F6;
 					};
 				};
@@ -189,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD5A7B9E23DF664800EBD8F6 /* LaunchScreen.storyboard in Resources */,
+				DD5A7BEB23E1A8BC00EBD8F6 /* Default-568h@2x.png in Resources */,
 				DD5A7B9B23DF664800EBD8F6 /* Assets.xcassets in Resources */,
 				DD5A7B9923DF664300EBD8F6 /* Main.storyboard in Resources */,
 			);
@@ -209,9 +293,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD5A7B9623DF664300EBD8F6 /* ViewController.m in Sources */,
+				DD5A7BCA23E1937E00EBD8F6 /* PNCMarsPhotoReference.m in Sources */,
+				DD5A7BC623E1933900EBD8F6 /* MainCollectionViewController.swift in Sources */,
+				DD5A7BCF23E193C500EBD8F6 /* PNCMarsRover.m in Sources */,
 				DD5A7B9023DF664300EBD8F6 /* AppDelegate.m in Sources */,
+				DD5A7BE323E1984400EBD8F6 /* PNCMarsRoverClient.m in Sources */,
+				DD5A7BC323E1930600EBD8F6 /* DetailViewController.swift in Sources */,
+				DD5A7BD623E1940F00EBD8F6 /* Camera.swift in Sources */,
 				DD5A7BA123DF664800EBD8F6 /* main.m in Sources */,
 				DD5A7B9323DF664300EBD8F6 /* SceneDelegate.m in Sources */,
+				DD5A7BD323E193EB00EBD8F6 /* PNCSolDescription.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +310,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD5A7BE423E1984400EBD8F6 /* PNCMarsRoverClient.m in Sources */,
 				DD5A7BAB23DF664900EBD8F6 /* Astronomy_HybridTests.m in Sources */,
+				DD5A7BD023E193C500EBD8F6 /* PNCMarsRover.m in Sources */,
+				DD5A7BC723E1933900EBD8F6 /* MainCollectionViewController.swift in Sources */,
+				DD5A7BC423E1930600EBD8F6 /* DetailViewController.swift in Sources */,
+				DD5A7BCB23E1937E00EBD8F6 /* PNCMarsPhotoReference.m in Sources */,
+				DD5A7BD723E1940F00EBD8F6 /* Camera.swift in Sources */,
+				DD5A7BD423E193EB00EBD8F6 /* PNCSolDescription.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T87Y8KB3R4;
 				INFOPLIST_FILE = "Astronomy-Hybrid/Info.plist";
@@ -376,6 +475,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.percyNgan.Astronomy-Hybrid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Astronomy-Hybrid/Astronomy-Hybrid-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -384,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T87Y8KB3R4;
 				INFOPLIST_FILE = "Astronomy-Hybrid/Info.plist";
@@ -393,6 +496,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.percyNgan.Astronomy-Hybrid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Astronomy-Hybrid/Astronomy-Hybrid-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -400,7 +505,9 @@
 		DD5A7BB323DF664900EBD8F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T87Y8KB3R4;
 				INFOPLIST_FILE = "Astronomy-HybridTests/Info.plist";
@@ -412,6 +519,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.percyNgan.Astronomy-HybridTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astronomy-Hybrid.app/Astronomy-Hybrid";
 			};
@@ -420,7 +530,9 @@
 		DD5A7BB423DF664900EBD8F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T87Y8KB3R4;
 				INFOPLIST_FILE = "Astronomy-HybridTests/Info.plist";
@@ -432,6 +544,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.percyNgan.Astronomy-HybridTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astronomy-Hybrid.app/Astronomy-Hybrid";
 			};
