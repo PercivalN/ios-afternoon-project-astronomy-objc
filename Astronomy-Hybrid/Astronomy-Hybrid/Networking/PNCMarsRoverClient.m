@@ -30,8 +30,8 @@ static NSString *apiKey = @"3hciNYVlQwrnNl1xSH2ooJI0ggzKro4jTo5vmCYe";
 	// Query Parameters
 
 	NSArray *queryItems = @[
-							[NSURLQueryItem queryItemWithName:@"api_key" value:apiKey]
-							];
+		[NSURLQueryItem queryItemWithName:@"api_key" value:apiKey]
+	];
 
 	urlComponents.queryItems = queryItems;
 
@@ -83,54 +83,76 @@ static NSString *apiKey = @"3hciNYVlQwrnNl1xSH2ooJI0ggzKro4jTo5vmCYe";
 	NSURLComponents *urlComponents = [[NSURLComponents alloc] initWithString:photosString];
 
 
-	  // Query Parameters
+	// Query Parameters
 
-	  NSArray *queryItems = @[
-							[NSURLQueryItem queryItemWithName:@"sol" value:[sol stringValue]],
-							[NSURLQueryItem queryItemWithName:@"api_key" value:apiKey]
-							  ];
+	NSArray *queryItems = @[
+		[NSURLQueryItem queryItemWithName:@"sol" value:[sol stringValue]],
+		[NSURLQueryItem queryItemWithName:@"api_key" value:apiKey]
+	];
 
-	  urlComponents.queryItems = queryItems;
+	urlComponents.queryItems = queryItems;
 
-	  NSURL *url = urlComponents.URL;
-	  NSLog(@"URL: %@", url);
+	NSURL *url = urlComponents.URL;
+	NSLog(@"URL: %@", url);
 
-	  NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+	NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
 
-		  // Handle the responses (error vs. data)
+		// Handle the responses (error vs. data)
 
-		  // Call the completion block as needed
-		  // check the errors
+		// Call the completion block as needed
+		// check the errors
 
-		  if (error) {
-			  NSLog(@"Error fetching marsRoverPhotos: %@", error);
-			  completionBlock(nil, error);
-			  return;
-		  }
+		if (error) {
+			NSLog(@"Error fetching marsRoverPhotos: %@", error);
+			completionBlock(nil, error);
+			return;
+		}
 
-		  // parse the data
-		  NSError *jsonError = nil;
-		  NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-		  if (jsonError) {
-			  NSLog(@"JSON Error: %@", jsonError);
-			  completionBlock(nil, jsonError);
-			  return;
-		  }
+		// parse the data
+		NSError *jsonError = nil;
+		NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+		if (jsonError) {
+			NSLog(@"JSON Error: %@", jsonError);
+			completionBlock(nil, jsonError);
+			return;
+		}
 
-		  // TODO: Parse the data
-		  NSLog(@"JSON: %@", json);
-		  //Convert from dictionary to a [Quake] using NSArray
+		// TODO: Parse the data
+		NSLog(@"JSON: %@", json);
+		//Convert from dictionary to a [Quake] using NSArray
 
-		  NSArray *photoArray = json[@"photos"];
-					NSMutableArray *photoReferences = [[NSMutableArray alloc] init];
+		NSArray *photoArray = json[@"photos"];
+		NSMutableArray *photoReferences = [[NSMutableArray alloc] init];
 
-					for (NSDictionary *photo in photoArray) {
-						PNCMarsPhotoReference *photoReference = [[PNCMarsPhotoReference alloc] init];
-					}
+		for (NSDictionary *photo in photoArray) {
+			PNCMarsPhotoReference *photoReference = [[PNCMarsPhotoReference alloc] initWithDictionary:photo];
+			[photoReference addObject:photoReference];
+		}
 
-		  completionBlock(rover, nil);
-	  }];
-	  [task resume];
+		completionBlock(photoReferences, nil);
+	}];
+	[task resume];
 }
 
+- (void)fetchImageFromPhotoURL:(NSURL*)photoURL completionBlock:(PNCImageCompletionBlock)completionBlock {
+	NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:photoURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+
+		// Handle the responses (error vs. data)
+
+		// Call the completion block as needed
+		// check the errors
+
+		if (error) {
+			NSLog(@"Error fetching photo: %@", error);
+			completionBlock(nil, error);
+			return;
+		}
+
+		// parse the data
+
+
+		completionBlock(data, nil);
+	}];
+	[task resume];
+}
 @end

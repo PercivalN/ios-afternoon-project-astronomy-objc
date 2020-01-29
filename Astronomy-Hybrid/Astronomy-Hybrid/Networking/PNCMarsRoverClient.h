@@ -20,7 +20,7 @@ typedef void (^PNCImageCompletionBlock)(NSData *, NSError *);
 
 - (void)fetchMarsRoverWithName:(NSString *)name completionBlock:(PNCRoverCompletionBlock)completionBlock;
 - (void)fetchPhotosFromRover:(PNCMarsRover *)rover onSol:(NSNumber *)sol completionBlock:(PNCPhotoReferenceCompletionBlock)completionBlock;
-- (void)fetchImageFromPhotoReference:(NSArray<PNCMarsPhotoReference *> *)photoReference completionBlock:(PNCImageCompletionBlock)completionBlock;
+- (void)fetchImageFromPhotoURL:(NSURL *)photoURL completionBlock:(PNCImageCompletionBlock)completionBlock;
 
 @end
 
