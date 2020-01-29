@@ -11,9 +11,13 @@
 
 @interface PNCMarsPhotoReference : NSObject
 
-@property NSNumber *referenceId;
-@property NSNumber *sol;
-@property PNCCamera *camera;
+@property (nonnull) NSNumber *referenceId;
+@property (nonnull) NSNumber *sol;
+@property (nonnull) PNCCamera *camera;
+@property (nonnull) NSDate *earthDate;
+@property (nonnull) NSURL *imageURL;
+
+- (instancetype)initWithDictionary:(NSDictionary *_Nonnull)dictionary;
 
 @end
 

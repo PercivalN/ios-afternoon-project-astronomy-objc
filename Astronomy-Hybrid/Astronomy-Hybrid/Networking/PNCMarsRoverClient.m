@@ -8,6 +8,7 @@
 
 #import "PNCMarsRoverClient.h"
 #import "PNCMarsRover.h"
+#import "PNCMarsPhotoReference.h"
 
 @implementation PNCMarsRoverClient
 
@@ -119,9 +120,13 @@ static NSString *apiKey = @"3hciNYVlQwrnNl1xSH2ooJI0ggzKro4jTo5vmCYe";
 		  // TODO: Parse the data
 		  NSLog(@"JSON: %@", json);
 		  //Convert from dictionary to a [Quake] using NSArray
-		  NSDictionary *photoManifest = json[@"photo_manifest"];
 
-		  PNCMarsRover *rover = [[PNCMarsRover alloc] initWithDictionary:photoManifest];
+		  NSArray *photoArray = json[@"photos"];
+					NSMutableArray *photoReferences = [[NSMutableArray alloc] init];
+
+					for (NSDictionary *photo in photoArray) {
+						PNCMarsPhotoReference *photoReference = [[PNCMarsPhotoReference alloc] init];
+					}
 
 		  completionBlock(rover, nil);
 	  }];

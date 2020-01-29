@@ -10,11 +10,12 @@
 
 @implementation PNCSolDescription
 
-- (instancetype)init
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary
 {
-	self = [super init];
-	if (self) {
-		_cameras = [[NSArray alloc] init];
+	if (self = [super init]) {
+		_sol = dictionary[@"sol"];
+		_totalPhotos = dictionary[@"total_photos"];
+		_cameras = dictionary[@"cameras"];
 	}
 	return self;
 }

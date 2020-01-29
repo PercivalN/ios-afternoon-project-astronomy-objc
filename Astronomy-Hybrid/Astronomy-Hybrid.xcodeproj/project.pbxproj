@@ -414,6 +414,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Astronomy-Hybrid/Astronomy-Hybrid-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -465,6 +466,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Astronomy-Hybrid/Astronomy-Hybrid-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

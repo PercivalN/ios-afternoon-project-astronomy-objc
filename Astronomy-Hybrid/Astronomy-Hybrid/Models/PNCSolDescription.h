@@ -10,9 +10,11 @@
 
 @interface PNCSolDescription : NSObject
 
-@property int sol;
-@property int totalPhotos;
-@property NSArray<NSArray *> *cameras;
+@property (nonnull) NSNumber *sol;
+@property (nonnull) NSNumber *totalPhotos;
+@property (nonnull) NSArray<NSArray *> *cameras;
+
+- (instancetype)initWithDictionary:(NSDictionary *_Nonnull)dictionary;
 
 @end
 

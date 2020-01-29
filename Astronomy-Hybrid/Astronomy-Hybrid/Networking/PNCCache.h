@@ -10,7 +10,11 @@
 
 
 
-@interface PNCCache : NSObject
+@interface PNCCache: NSCache
+
+- (void)cacheValueForKey:(NSString * _Nonnull)key value:(NSData * _Nonnull)value;
+- (NSData * _Nullable)valueForKey:(NSString * _Nonnull)key;
+
 
 @end
 
